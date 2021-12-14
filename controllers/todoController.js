@@ -1,8 +1,9 @@
 //05. Exporting the module
 module.exports = function(app){
   //08. Prepare get request
-  app.get('./todo', function(req, res){
-
+  app.get('/todo', function(req, res){
+    //09. Render
+    res.render('todo');
   });
   //08. Prepare post request
   app.post('./todo', function(req, res){
