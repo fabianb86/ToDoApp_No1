@@ -1,0 +1,24 @@
+{
+  "name": "todoapp_no1",
+  "version": "1.0.0",
+  "description": "My first todo app in node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabianb86/ToDoApp_No1.git"
+  },
+  "author": "Fabian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabianb86/ToDoApp_No1/issues"
+  },
+  "homepage": "https://github.com/fabianb86/ToDoApp_No1#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
