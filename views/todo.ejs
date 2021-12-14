@@ -11,6 +11,9 @@
   src="https://code.jquery.com/jquery-1.12.4.min.js"
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
   crossorigin="anonymous"></script>
+  <!-- 15. Vinculate the todo-list.js file -->
+  <script src="/assets/todo-list.js"></script>
+
   <link rel="stylesheet" href="assets/styles.css" type="text/css">
 </head>
 
@@ -18,14 +21,15 @@
   <!-- 11. to do list body -->
   <h1>Fabian's To do list</h1>
   <div id="todo-table">
-    <form>
+    <form method="post">
       <input type="text" name="item" placeholder="Add new item..." required />
       <button type="submit">Add Item</button>
     </form>
     <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
+      <!-- 13. Getting the data dinamically -->
+      <% for(var i=0; i < todos.length; i++){ %>
+        <li><%= todos[i].item %></li>
+      <% } %>
     </ul>
   </div>
 </body>
